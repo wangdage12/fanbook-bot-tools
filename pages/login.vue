@@ -146,7 +146,7 @@ function onSubmit() {
       </ClientOnly>
     </FormItem>
     <FormItem class='operation'>
-      <Button type='primary' html-type='submit'>
+      <Button type='primary' html-type='submit' :disabled="status !== 'success'">
         确认添加
       </Button>
     </FormItem>
