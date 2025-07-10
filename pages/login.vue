@@ -123,7 +123,7 @@ function onSubmit() {
     auto-label-width
     @submit='onSubmit'
   >
-    <FormItem label='机器人 Token' :validate-status='tokenValidate' feedback>
+    <FormItem label='机器人 Token' :validate-status='tokenValidate' feedback help="">
       <ClientOnly>
         <Input
           v-if='$device === "desktop"'
@@ -146,7 +146,7 @@ function onSubmit() {
       </ClientOnly>
     </FormItem>
     <FormItem class='operation'>
-      <Button type='primary' html-type='submit' :disabled="status !== 'success'">
+      <Button type='primary' html-type='submit'>
         确认添加
       </Button>
     </FormItem>
@@ -176,6 +176,7 @@ body.mobile .form {
 }
 .operation {
   margin-top: -12px;
+
 }
 </style>
 
